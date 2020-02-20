@@ -1,0 +1,32 @@
+{
+  "name": "homebridge-flic-platform",
+  "version": "1.0.0",
+  "description": "A homebridge platform plugin to support Flic 2 buttons via the Flic Hub LR",
+  "main": "index.js",
+  "engines": {
+    "node": ">=12.15.0",
+    "homebridge": ">=0.4.50"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Djelibeybi/homebridge-flic-platform.git"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "flic"
+  ],
+  "author": "Avi Miller <me@dje.li>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Djelibeybi/homebridge-flic-platform/issues"
+  },
+  "homepage": "https://github.com/Djelibeybi/homebridge-flic-platform#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "homebridge-lib": "^4.4.14"
+  },
+  "devDependencies": {
+    "semistandard": "^14.2.0"
+  }
+}
