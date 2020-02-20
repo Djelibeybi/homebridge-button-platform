@@ -18,7 +18,6 @@
         "title": "Port",
         "description": "Incoming port the HTTP Server should listen on for incoming events. This needs to be an unused port on your Homebridge server.",
         "type": "integer",
-        "minimum": 1025,
         "maximum": 65535,
         "default": 3001
       },
@@ -39,20 +38,8 @@
       "type": "flex",
       "flex-flow": "row wrap",
       "items": [
-        {
-          "type": "flex",
-          "flex-flow": "column",
-          "items": [
-            "name"
-          ]
-        },
-        {
-          "type": "flex",
-          "flex-flow": "column",
-          "items": [
-            "port"
-          ]
-        }
+        "name",
+        "port"
       ]
     },
     {
