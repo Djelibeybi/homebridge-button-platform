@@ -1,7 +1,7 @@
 {
-  "name": "homebridge-flic-platform",
+  "name": "homebridge-button-platform",
   "version": "1.0.0",
-  "description": "A homebridge platform plugin to support Flic 2 buttons via the Flic Hub LR",
+  "description": "A homebridge platform plugin that creates virtual buttons that can be triggered using HTTP requests.",
   "main": "index.js",
   "engines": {
     "node": ">=12.15.0",
@@ -9,18 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Djelibeybi/homebridge-flic-platform.git"
+    "url": "git+https://github.com/Djelibeybi/homebridge-button-platform.git"
   },
   "keywords": [
     "homebridge-plugin",
-    "flic"
+    "flic",
+    "button",
+    "http",
+    "statelessprogrammableswitch"
   ],
   "author": "Avi Miller <me@dje.li>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Djelibeybi/homebridge-flic-platform/issues"
+    "url": "https://github.com/Djelibeybi/homebridge-button-platform/issues"
   },
-  "homepage": "https://github.com/Djelibeybi/homebridge-flic-platform#readme",
+  "homepage": "https://github.com/Djelibeybi/homebridge-button-platform#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-validator": "^6.4.0",

@@ -1,8 +1,13 @@
+// homebridge-button-platform/index.js
+// Copyright (c) 2020 Avi Miller.
+//
+// Homebridge platform plugin to create virtual StatelessProgrammableSwitch buttons
+
 'use strict';
 
-const FlicPlatform = require('./lib/FlicPlatform');
+const ButtonPlatform = require('./lib/ButtonPlatform');
 const PackageJson = require('./package.json');
 
 module.exports = function (homebridge) {
-  FlicPlatform.loadPlatform(homebridge, PackageJson, 'flic-platform', FlicPlatform);
+  ButtonPlatform.loadPlatform(homebridge, PackageJson, 'button-platform', ButtonPlatform);
 };

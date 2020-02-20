@@ -1,0 +1,79 @@
+{
+  "pluginAlias": "button-platform",
+  "pluginType": "platform",
+  "singular": true,
+  "headerDisplay": "Homebridge plugin to create virtual buttons that respond to HTTP requests.",
+  "footerDisplay": "Check the Homebridge logs to find the Event URI for each button.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "description": "This name is only visible in the Homebridge logs.",
+        "type": "string",
+        "required": true,
+        "default": "Button Platform"
+      },
+      "port": {
+        "title": "Port",
+        "description": "Incoming port the HTTP Server should listen on for incoming events. This needs to be an unused port on your Homebridge server.",
+        "type": "integer",
+        "minimum": 1025,
+        "maximum": 65535,
+        "default": 3001
+      },
+      "buttons": {
+        "title": "Button names",
+        "type": "array",
+        "required": true,
+        "items": {
+          "title": "Name",
+          "description": "Friendly name for the virtual button. The plugin will generate an inbound URI from this name and output it in the Homebridge logs.",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "layout": [
+    {
+      "type": "flex",
+      "flex-flow": "row wrap",
+      "items": [
+        {
+          "type": "flex",
+          "flex-flow": "column",
+          "items": [
+            "name"
+          ]
+        },
+        {
+          "type": "flex",
+          "flex-flow": "column",
+          "items": [
+            "port"
+          ]
+        }
+      ]
+    },
+    {
+      "nodescription": true,
+      "notitle": true,
+      "key": "buttons",
+      "type": "array",
+      "items": [
+        {
+          "type": "div",
+          "displayFlex": true,
+          "flex-direction": "row",
+          "items": [
+            {
+              "key": "buttons[]",
+              "required": true,
+              "flex": "1 1 50px"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
