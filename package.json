@@ -29,7 +29,5 @@
     "express-validator": "^6.4.0",
     "homebridge-lib": "^4.5.5"
   },
-  "devDependencies": {
-    "semistandard": "^14.2.0"
-  }
+  "devDependencies": {}
 }
