@@ -9,7 +9,7 @@ The simplest method to install and configure this plugin is via [`homebridge-con
 To install manually, run the following command in your Homebridge directory. Depending on how you installed Homebridge, you may need to add the `-g` and/or the `--unsafe-perms` parameters:
 
 ```
-$ npm install homebridge-button-plugin
+$ npm install homebridge-button-platform
 ```
 
 ## Configuration
