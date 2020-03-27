@@ -1,3 +1,5 @@
+[![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
+
 # homebridge-button-platform
 
 A Homebridge platform plugin that creates virtual buttons that can be triggered using HTTP requests.
