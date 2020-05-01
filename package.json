@@ -1,6 +1,6 @@
 {
   "name": "homebridge-button-platform",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A homebridge platform plugin that creates virtual buttons that can be triggered using HTTP requests.",
   "main": "index.js",
   "engines": {
