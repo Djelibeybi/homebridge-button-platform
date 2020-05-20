@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## 1.1.0 (2020-05-20)
 
-* Enabled `GET` requests to trigger button events
+* Enable `GET` requests to trigger button events
 * Update `homebridge-lib` dependency to `4.7.5`
 * Update `express-validator` dependency to `6.5.0`
 
