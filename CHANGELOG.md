@@ -2,9 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
-## 1.1.1 (2020-05-24)
+## 1.1.2 (2020-05-24)
 
 * Remove stale buttons automatically
+* Update README.md to indicate what happens on button rename
 
 ## 1.1.0 (2020-05-20)
 
