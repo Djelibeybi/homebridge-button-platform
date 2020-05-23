@@ -50,6 +50,9 @@ own URI on which the server will listen for events. You can determine the URI
 for each button by checking the Homebridge logs for
 `The Event URI for <button name> is: /button-button-name` strings.
 
+> **Note:** renaming a button in `config.json` is the same as deleting the old
+button and adding a new one, i.e. any configuration will be lost.
+
 ## Sending events
 
 To trigger a button event, send an HTTP `GET` request with a specific query
