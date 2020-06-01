@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.1.3 (2020-06-01)
+
+* Disable heartbeat for each button.
+* Remove check for configuration as Homebridge handles this automatically.
+* Update `homebridge-lib` dependency to `4.7.7`.
+* Updated minimum Homebridge version to `1.1.0`.
+* Updated minimum Node.js version to `12.17.0 LTS`.
+
 ## 1.1.2 (2020-05-24)
 
 * Remove stale buttons automatically
