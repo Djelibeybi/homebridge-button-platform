@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.1.4 (2020-07-12)
+
+Bump dependencies:
+
+* [`homebridge-lib`](https://github.com/ebaauw/homebridge-lib) to v4.7.12
+* Node.js v12.18.2 LTS;
+* bonjour-hap v3.5.11.
+
 ## 1.1.3 (2020-06-01)
 
 * Disable heartbeat for each button.
