@@ -4,7 +4,7 @@
   "description": "A homebridge platform plugin that creates virtual buttons that can be triggered using HTTP requests.",
   "main": "index.js",
   "engines": {
-    "node": "^12.18.2",
+    "node": "^12.19.0",
     "homebridge": "^1.1.0"
   },
   "repository": {
@@ -26,8 +26,8 @@
   "homepage": "https://github.com/Djelibeybi/homebridge-button-platform#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-validator": "^6.5.0",
-    "homebridge-lib": "^4.7.7"
+    "express-validator": "^6.6.1",
+    "homebridge-lib": "^4.7.16"
   },
   "devDependencies": {}
 }
