@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.2.0 (2020-11-10)
+
+Bump dependencies and minimum requirements:
+
+* [`homebridge-lib`](https://github.com/ebaauw/homebridge-lib) to v4.8.0 which requires:
+  * Node.js v14.15.0 LTS
+  * Homebridge 1.1.0
+
 ## 1.1.5 (2020-10-10)
 
 Bump dependencies and minimum requirements:
