@@ -7,6 +7,11 @@ using HTTP requests. It was designed to provide HomeKit support for
 [Flic smart buttons](https://flic.io/) which don't have native HomeKit support
 yet but can be leveraged by anything that can send HTTP requests.
 
+> **UPDATE:** as of 2 December 2020, the Flic Hub LR now supports HomeKit
+natively, however it does require a Home Hub to work, i.e. an Apple TV, HomePod
+(regular or mini) or always-on iPad. See <https://youtu.be/TX2gzmWSsJ0> for
+instructions on how to configure direct HomeKit access.
+
 ## Install
 
 The simplest method to install and configure this plugin is via
