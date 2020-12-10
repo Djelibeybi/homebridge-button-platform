@@ -1,7 +1,5 @@
 # Button Platform for Homebridge
 
-[![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
-
 This Homebridge platform plugin creates virtual buttons that can be triggered
 using HTTP requests. It was designed to provide HomeKit support for
 [Flic smart buttons](https://flic.io/) which don't have native HomeKit support
