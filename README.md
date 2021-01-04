@@ -1,14 +1,23 @@
 # Button Platform for Homebridge
 
 This Homebridge platform plugin creates virtual buttons that can be triggered
-using HTTP requests. It was designed to provide HomeKit support for
-[Flic smart buttons](https://flic.io/) which don't have native HomeKit support
-yet but can be leveraged by anything that can send HTTP requests.
+using HTTP requests. It was originally created to provide HomeKit support for
+[Flic smart buttons](https://flic.io/) before the Flic Hub LR got native HomeKit
+support but can be leveraged by anything that can send HTTP requests.
 
-> **UPDATE:** as of 2 December 2020, the Flic Hub LR now supports HomeKit
-natively, however it does require a Home Hub to work, i.e. an Apple TV, HomePod
-(regular or mini) or always-on iPad. See <https://youtu.be/TX2gzmWSsJ0> for
-instructions on how to configure direct HomeKit access.
+> **Flic Hub LR now supports HomeKit**<br>
+Flic released a firmware update for the Flic Hub LR on 2 December 2020 which
+included native HomeKit support. Visit <https://flic.io/homekit> for
+instructions on how to configure native HomeKit access.
+
+## Requirements
+
+**This plugin requires a working home hub.**
+
+Before you install, ensure you have [setup a HomePod, HomePod mini, Apple TV or
+iPad as a home hub](https://support.apple.com/en-au/HT207057) for HomeKit. A
+home hub is required to run automations triggered by the button events generated
+by this plugin.
 
 ## Install
 
