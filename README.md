@@ -1,16 +1,16 @@
 # Button Platform for Homebridge
 
+[![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
+
 This Homebridge platform plugin creates virtual buttons that can be triggered
 using HTTP requests. It was originally created to provide HomeKit support for
 [Flic smart buttons](https://flic.io/) before the Flic Hub LR got native HomeKit
 support but can be leveraged by anything that can send HTTP requests.
 
-> **Flic Hub LR now supports HomeKit**<br>
-Flic released a firmware update for the Flic Hub LR on 2 December 2020 which
-included native HomeKit support. Visit <https://flic.io/homekit> for
-instructions on how to configure native HomeKit access.
-
-## Requirements
+> **Flic Hub LR now supports HomeKit**: Flic released a firmware update for the
+Flic Hub LR on 2 December 2020 which included native HomeKit support.
+Visit <https://flic.io/homekit> for instructions on how to configure native
+HomeKit access.
 
 **This plugin requires a working home hub.**
 
