@@ -26,8 +26,8 @@
   "homepage": "https://github.com/Djelibeybi/homebridge-button-platform#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-validator": "^6.9.1",
-    "homebridge-lib": "^5.0.8"
+    "express-validator": "^6.10.0",
+    "homebridge-lib": "^5.0.9"
   },
   "devDependencies": {}
 }
