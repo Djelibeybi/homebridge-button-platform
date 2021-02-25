@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.3.09 (2021-02-26)
+
+Bump dependencies as HAP-NodeJS is not setting eventOnlyCharacteristic properly
+and homebridge-lib 5.0.9 includes a workaround for this.
+
 ## 1.2.0 (2020-11-10)
 
 Bump dependencies and minimum requirements:
