@@ -1,6 +1,7 @@
 # Button Platform for Homebridge
 
 [![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDjelibeybi%2Fhomebridge-button-platform.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FDjelibeybi%2Fhomebridge-button-platform?ref=badge_shield)
 
 This Homebridge platform plugin creates virtual buttons that can be triggered
 using HTTP requests. It was originally created to provide HomeKit support for
@@ -149,3 +150,7 @@ hit the key.
 
 Check the Homebridge logs for any warnings as the plugin will log any attempts
 to trigger an invalid event or any invalid URIs.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDjelibeybi%2Fhomebridge-button-platform.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FDjelibeybi%2Fhomebridge-button-platform?ref=badge_large)
