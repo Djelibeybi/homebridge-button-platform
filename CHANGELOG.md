@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## Development
+## 1.4.0 (Unreleased)
 
 * Buttons have batteries! The virtual button will now reflect the current
   battery level if triggered by a Flic 2 button. A battery level of less than
