@@ -2,11 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
-## 1.4.0 (2021-04-19)
+## 1.4.1 (2021-04-19)
 
-* Buttons have batteries! The virtual button will now reflect the current
-  battery level if triggered by a Flic 2 button. A battery level of less than
-  15% is flagged as low.
+Buttons have batteries! The virtual button will now reflect the current
+battery level if triggered by a Flic 2 button. A battery level of less than
+15% is flagged as low.
+
+The patch version bump to 1.4.1 was caused by me breaking the publish automation
+and having to do it twice.
 
 ## 1.3.0 (2021-02-26)
 
