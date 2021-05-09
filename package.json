@@ -33,7 +33,7 @@
   "homepage": "https://github.com/Djelibeybi/homebridge-button-platform#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-validator": "^6.10.1",
+    "express-validator": "^6.11.1",
     "homebridge-lib": "^5.1.2"
   },
   "devDependencies": {}
