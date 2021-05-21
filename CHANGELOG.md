@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.4.2 (2021-05-21)
+
+* Fix #46: `POST` requests were not calling the right function
+* Updated `express-validator` dependency to v6.11.1
+
 ## 1.4.1 (2021-04-19)
 
 Buttons have batteries! The virtual button will now reflect the current
