@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.4.2 (2021-05-21)
+
+* Fixed POST requests for double-click and hold events.
+
 ## 1.4.1 (2021-04-19)
 
 Buttons have batteries! The virtual button will now reflect the current
