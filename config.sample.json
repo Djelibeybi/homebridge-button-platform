@@ -1,13 +1,9 @@
 {
   "platforms": [
     {
-        "platform": "button-platform",
-        "port": 3001,
-        "buttons": [
-            "My Button",
-            "Your Button",
-            "Their Button"
-        ]
+      "platform": "button-platform",
+      "port": 3001,
+      "buttons": ["My Button", "Your Button", "Their Button"]
     }
   ]
 }

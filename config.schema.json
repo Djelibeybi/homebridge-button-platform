@@ -37,10 +37,7 @@
     {
       "type": "flex",
       "flex-flow": "row wrap",
-      "items": [
-        "name",
-        "port"
-      ]
+      "items": ["name", "port"]
     },
     {
       "nodescription": true,

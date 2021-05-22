@@ -8,9 +8,9 @@ using HTTP requests. It was originally created to provide HomeKit support for
 support but can be leveraged by anything that can send HTTP requests.
 
 > **Flic Hub LR now supports HomeKit**: Flic released a firmware update for the
-Flic Hub LR on 2 December 2020 which included native HomeKit support.
-Visit <https://flic.io/homekit> for instructions on how to configure native
-HomeKit access.
+> Flic Hub LR on 2 December 2020 which included native HomeKit support.
+> Visit <https://flic.io/homekit> for instructions on how to configure native
+> HomeKit access.
 
 **This plugin requires a working home hub.**
 
@@ -63,7 +63,7 @@ for each button by checking the Homebridge logs for
 `The Event URI for <button name> is: /button-button-name` strings.
 
 > **Note:** renaming a button in `config.json` is the same as deleting the old
-button and adding a new one, i.e. any configuration will be lost.
+> button and adding a new one, i.e. any configuration will be lost.
 
 ## Sending events
 
@@ -77,9 +77,9 @@ button.
 The simplest method of triggering an event is to use a simple `GET` request with
 the query string parameter of `event` set to one of the valid event types:
 
-* `click` or `single-press`
-* `double-click` or `double-press`
-* `hold` or `long-press`
+- `click` or `single-press`
+- `double-click` or `double-press`
+- `hold` or `long-press`
 
 For example, to send a single click event to a button using `curl`:
 
@@ -126,12 +126,12 @@ was listening on port 3001:
 
 The values are as follows:
 
-| Field | Value |
-|:------|:------|
-| Hub Action | **Internet Request** |
-| URL | `http://homebridge_ip:3001/button_uri` |
-| Content Type | `application/x-www-form-urlencoded` |
-| Body | `event=click` or `event=double-click` or `event=hold` |
+| Field        | Value                                                 |
+| :----------- | :---------------------------------------------------- |
+| Hub Action   | **Internet Request**                                  |
+| URL          | `http://homebridge_ip:3001/button_uri`                |
+| Content Type | `application/x-www-form-urlencoded`                   |
+| Body         | `event=click` or `event=double-click` or `event=hold` |
 
 ## Example Stream Deck configuration
 
