@@ -1,6 +1,6 @@
 {
   "name": "homebridge-button-platform",
-  "version": "1.4.2",
+  "version": "1.5.0-beta.0",
   "description": "A Homebridge platform plugin that creates virtual buttons that can be triggered using HTTP requests from real buttons like Flic or an Elgato Streamdeck.",
   "main": "index.js",
   "engines": {
