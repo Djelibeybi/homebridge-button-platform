@@ -8,6 +8,8 @@
     "node": "^14.15.0"
   },
   "scripts": {
+    "format": "prettier --write **/*.js",
+    "format-check": "prettier --check **/*.js",
     "postversion": "git push && git push --tags"
   },
   "repository": {
@@ -34,7 +36,10 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-validator": "^6.11.1",
+    "helmet": "^4.6.0",
     "homebridge-lib": "^5.1.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "prettier": "^2.3.0"
+  }
 }
