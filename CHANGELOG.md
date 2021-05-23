@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.4.3 (2021-05-23)
+
+* Updated [`homebridge-lib`](https://github.com/ebaauw/homebridge-lib) to v5.1.3
+  which requires:
+  * homebridge: v1.3.4
+  * Node.js: 14.17.0
+* Code cleanup and review
+
 ## 1.4.2 (2021-05-21)
 
 * Fix #46: `POST` requests were not calling the right function
