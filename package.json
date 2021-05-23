@@ -16,6 +16,12 @@
     "type": "git",
     "url": "git+https://github.com/Djelibeybi/homebridge-button-platform.git"
   },
+  "files": [
+    "lib/*.js",
+    "index.js",
+    "config.*.json",
+    "LICENSE"
+  ],
   "keywords": [
     "homebridge",
     "homebridge-plugin",
