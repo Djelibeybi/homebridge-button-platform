@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.5.0 (2021-08-31)
+
+* Significant refactoring to make the plugin cleaner and easier to maintain
+* Updated lots of dependencies
+
 ## 1.4.3 (2021-05-23)
 
 * Updated [`homebridge-lib`](https://github.com/ebaauw/homebridge-lib) to v5.1.3
