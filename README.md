@@ -128,8 +128,8 @@ same parameters as the `GET` request above:
 ## Using a `POST` request
 
 If you use an HTTP `POST` request you must set the Content-Type header to either
-`application/json` or `application/x-www-form-urlencoded`. The body of the request needs a field named `event` with a value of one of the
-event types defined above.
+`application/json` or `application/x-www-form-urlencoded`. The body of the request
+needs a field named `event` with a value of one of the event types defined above.
 
 For example, to send a double press event to a button using `curl` with a JSON
 payload:
