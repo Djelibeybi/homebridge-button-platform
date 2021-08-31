@@ -68,8 +68,8 @@ button and adding a new one, i.e. any configuration will be lost.
 ## Sending events
 
 To trigger a button event, send an HTTP `GET` request with a specific query
-string value or an HTTP `POST` request to your Homebridge IP address and the
-port specified in the configuration of the platform, plus the URI for the
+string value or an HTTP `POST` request to your Homebridge hostname or IP address
+and the port specified in the configuration of the platform, plus the URI for the
 button.
 
 ### Using a `GET` request
@@ -90,24 +90,49 @@ Success
 
 You could also use this URL with a normal web browser.
 
-### Using a `POST` request
+### Example Flic button configuration
+
+Here’s a screenshot of what an Internet Request action should look like in the
+Flic app if your Homebridge server is `homebridge.local` and the plugin
+was listening on port 3001:
+
+![flic-config](docs/flic-config.png)
+
+The values are as follows:
+
+| Field | Value |
+|:------|:------|
+| Hub Action | **Internet Request** |
+| URL | `http://homebridge.local:3001/button-name?event=click` |
+| Type | **GET** |
+
+### Battery level
+
+The plugin from v1.5 onwards automatically creates a
+battery service when it detects it's being triggered by a Flic button and will
+update the battery level with the current value from the Flic whenever the
+button is pushed.
+
+### Example Stream Deck configuration
+
+You can use the "Website" Stream Deck action to trigger an event. In the
+Stream Deck configuration, drag the "Website" action to a key and configure
+the URL to be `http://homebridge.local:3001/button-name?event=click` which uses the
+same parameters as the `GET` request above:
+
+![streamdeck-key](docs/streamdeck-config.png)
+
+> **Top tip:** If you enable the `GET request in background` option, a browser will
+> not open when you hit the key.
+
+## Using a `POST` request
 
 If you use an HTTP `POST` request you must set the Content-Type header to either
-`application/json` or `application/x-www-form-urlencoded`.
-
-The body of the request needs a field named `event` with a value of one of the
+`application/json` or `application/x-www-form-urlencoded`. The body of the request needs a field named `event` with a value of one of the
 event types defined above.
 
-For example, to send a double press event to a button using `curl`:
-
-```shell
-$ curl -X POST \
-  -H 'Content-Type: application/x-www-form-urlencoded' \
-  -d 'event=double-click' \
-  http://<homebridge>:<port>/<uri>
-```
-
-The plugin also accepts `application/json` payloads:
+For example, to send a double press event to a button using `curl` with a JSON
+payload:
 
 ```shell
 $ curl -X POST \
@@ -116,34 +141,16 @@ $ curl -X POST \
   http://<homebridge>:<port>/<uri>
 ```
 
-## Example Flic button configuration
+You can also `POST` with an `application/x-www-form-urlencoded` payload:
 
-Here’s a screenshot of what an Internet Request action should look like in the
-Flic app if your Homebridge server’s IP address was 192.168.0.100 and the plugin
-was listening on port 3001:
+```shell
+$ curl -X POST \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -d 'event=double-click' \
+  http://<homebridge>:<port>/<uri>
+```
 
-![internet-request](https://omg.dje.li/images/internet-request.png)
-
-The values are as follows:
-
-| Field | Value |
-|:------|:------|
-| Hub Action | **Internet Request** |
-| URL | `http://homebridge_ip:3001/button_uri` |
-| Content Type | `application/x-www-form-urlencoded` |
-| Body | `event=click` or `event=double-click` or `event=hold` |
-
-## Example Stream Deck configuration
-
-You can use the "Website" Stream Deck action to trigger an event. In the
-Stream Deck configuration, drag the "Website" action to a key and configure
-the URL to be `http://<homebridge>:<port>/<uri>?event=<event>` which uses the
-same parameters as the `GET` request above:
-
-![streamdeck-key](https://omg.dje.li/images/streamdeck-key.png)
-
-Tick the `Access in background` option so that a browser is not opened when you
-hit the key.
+This is useful when used in with a larger form-based application.
 
 ## Troubleshooting
 
