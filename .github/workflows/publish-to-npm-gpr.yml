@@ -42,6 +42,7 @@ jobs:
         with:
           node-version: 14
           registry-url: https://npm.pkg.github.com/
+          scope: '@djelibeybi'
       - run: npm ci
       - run: npm publish --access public
         env:
