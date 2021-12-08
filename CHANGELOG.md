@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.5.1 (2021-12-09)
+
+* The battery is now set to 100% whenever Homebridge starts and will only
+  change when it gets a new value via a header (Fixes #88).
+
 ## 1.5.0 (2021-08-31)
 
 * Significant refactoring to make the plugin cleaner and easier to maintain
