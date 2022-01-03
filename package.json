@@ -42,7 +42,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-validator": "^6.13.0",
-    "helmet": "^4.6.0",
+    "helmet": "^5.0.1",
     "homebridge-lib": "^5.1.19"
   },
   "devDependencies": {
