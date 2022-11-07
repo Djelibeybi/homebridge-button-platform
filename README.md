@@ -1,6 +1,6 @@
 # Button Platform for Homebridge
 
-[![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
+> **ARCHIVED** This plugin is no longer updated.
 
 This Homebridge platform plugin creates virtual buttons that can be triggered
 using HTTP requests. It was originally created to provide HomeKit support for
